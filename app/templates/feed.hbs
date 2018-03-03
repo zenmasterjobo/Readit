@@ -1,0 +1,12 @@
+<div class="jumbo">
+  <h2>Welcome!</h2>
+  <p>
+  Welcome to ReadIt, my blatant clone of Reddit. No shame.
+    <br>Enjoy!
+  </p>
+  {{input class="light" placeholder="Search by Subreddit Name"}}
+</div>
+{{#each model.data.children as |postUnit|}}
+  {{post-entry post=postUnit}}
+{{/each}}
+

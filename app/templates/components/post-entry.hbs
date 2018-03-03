@@ -1,0 +1,17 @@
+<article class="listing">
+ <img src="{{post.data.thumbnail}}" alt="">
+   <h3><a target="_blank" href="{{unbound post.data.url}}">{{post.data.title}}</a></h3>
+    <div class="detail owner">
+      <span>Subreddit:</span> {{post.data.subreddit_name_prefixed}}
+    </div>
+    <div class="detail type">
+      <span>Link:</span> {{post.data.url}}
+    </div>
+    <div class="detail location">
+      <span># of Comments:</span> {{post.data.num_comments}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Upvotes:</span> {{post.data.ups}}
+    </div>
+</article>
+
