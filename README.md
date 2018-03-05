@@ -1,7 +1,8 @@
 # readit
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Readit - a Read only pull down of reddit's /r/popular  written with Ember.js
+
+Further Functionality pending.
 
 ## Prerequisites
 
@@ -14,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/zenmasterjobo/Readit.git`
 * `cd readit`
 * `npm install`
 
@@ -41,6 +42,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+ - Patience
+ 
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
