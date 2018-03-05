@@ -1,8 +1,8 @@
-
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-	model(){
-	    return Ember.$.getJSON('https://www.reddit.com/r/popular/.json');
-		}
+	model(){	
+		var url = "https://www.reddit.com/r/popular/.json";
+		return Ember.$.getJSON(url);
+	}
 });

@@ -1,17 +1,17 @@
 <article class="listing">
- <img src="{{post.data.thumbnail}}" alt="">
+  <div class="upvotes">
+    <!-- contains arrows and updoots -->
+    {{post.data.ups}} 
+  </div>
+  <div>
+    <a target="_blank" href="{{unbound post.data.url}}"><img src="{{post.data.thumbnail}}" alt=""></a>
+ </div>
+ <div class="meta">
    <h3><a target="_blank" href="{{unbound post.data.url}}">{{post.data.title}}</a></h3>
-    <div class="detail owner">
-      <span>Subreddit:</span> {{post.data.subreddit_name_prefixed}}
-    </div>
-    <div class="detail type">
-      <span>Link:</span> {{post.data.url}}
-    </div>
-    <div class="detail location">
-      <span># of Comments:</span> {{post.data.num_comments}}
-    </div>
-    <div class="detail bedrooms">
-      <span>Upvotes:</span> {{post.data.ups}}
-    </div>
+      <span>Submitted An Hour Ago by <a target="_blank" href="https://www.reddit.com/user/{{post.data.author}}">{{post.data.author}}</a> to <a target="_blank" href="https://www.reddit.com/{{unbound post.data.subreddit_name_prefixed}}">{{post.data.subreddit_name_prefixed}}</a>
+      </span><br/>
+    <span class="small"><a target="_blank" href="https://www.reddit.com{{unbound post.data.permalink}}">Comments: {{post.data.num_comments}}</a></span>
+    <br/>
+  </div>
 </article>
 
