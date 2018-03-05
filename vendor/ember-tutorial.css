@@ -204,13 +204,13 @@ p {
     float:left;
     font-size: small;
     width:45px;
-    margin-top: 16px;
+    margin-top: 19px;
     margin-right: 0px;
 }
 
-.lisitng .meta {
-   width:80%;
-   float:right;
+.listing .meta {
+   width:100%;
+   padding-left: 130px;
 }
 
 .listing small {
@@ -226,16 +226,6 @@ p {
 
 .listing h3 a {
     display: inline;
-}
-
-
-.listing .detail {
-    width: 36%;
-    display: inline-block;
-    padding: 10px 15px 0 0;
-    margin: 0;
-    font-weight: 300;
-    font-style: italic;
 }
 
 .listing span {
