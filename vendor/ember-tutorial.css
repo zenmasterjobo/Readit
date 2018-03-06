@@ -70,24 +70,22 @@ p {
  */
 
 .menu {
-    height: 4em;
+    height: 3em;
     background: #CEE3F8;
     /*background-color: #677ae4;
     background-color: #05526A;
     background-color: #e46855;*/
 }
-
 .menu h1 {
     padding: 7px 0 0 20px;
     color: #000000;
-    font-size: 2.1em;
 }
-
+/*
 .menu h1 em {
     position: relative;
     left: -12px;
 }
-
+*/
 .menu a,
 .menu .links {
     display: inline-block;
@@ -266,3 +264,12 @@ p {
     position: relative;
     top: -50px;
 }
+.snoo {
+    background: url(../assets/images/snoo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 64px;
+}
+
+
