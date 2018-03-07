@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('feed');
-  this.route('random');
+  this.route('videos');
 });
 
 export default Router;
