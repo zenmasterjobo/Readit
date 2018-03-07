@@ -206,10 +206,16 @@ p {
     margin-right: 0px;
 }
 
+.listing .comment {
+    width: 100%;
+    padding-left: 20px;
+}   
+
 .listing .meta {
    width:100%;
    padding-left: 130px;
 }
+
 
 .listing small {
     float: left;

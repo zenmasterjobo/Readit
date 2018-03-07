@@ -10,7 +10,10 @@
    <h3><a target="_blank" href="{{unbound post.data.url}}">{{post.data.title}}</a></h3>
       <span>Submitted at {{post.data.created_utc}} moment by <a target="_blank" href="https://www.reddit.com/user/{{post.data.author}}">{{post.data.author}}</a> to <a target="_blank" href="https://www.reddit.com/{{unbound post.data.subreddit_name_prefixed}}">{{post.data.subreddit_name_prefixed}}</a>
       </span><br/>
-    <span class="small"><a target="_blank" href="https://www.reddit.com{{unbound post.data.permalink}}">Comments: {{post.data.num_comments}}</a></span>
+    <!--<span class="small"><a target="_blank" href="https://www.reddit.com{{unbound post.data.permalink}}">Comments: {{post.data.num_comments}}</a></span>-->
+    {{#link-to 'feed.comments' post.data.subreddit_name_prefixed post.data.id}}
+      Comments ({{post.data.num_comments}})
+    {{/link-to}}
     <br/>
   </div>
 </article>
