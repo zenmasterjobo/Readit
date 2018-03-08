@@ -7,10 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('feed', function() {
-    this.route('comments', {
+  this.route('feed');
+  this.route('comments', {
       path: ':comments_sub/:comments_id'
-    });
   });
   this.route('videos');
 });

@@ -110,7 +110,7 @@ p {
 
 .menu .links a {
     position: relative;
-    bottom: 5px;
+    color: #000000;
 }
 
 .list-filter input {
@@ -276,6 +276,7 @@ p {
     background-repeat: no-repeat;
     height: 64px;
     width: 64px;
+    top: -500px;
 }
 
 
