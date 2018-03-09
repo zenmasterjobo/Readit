@@ -68,27 +68,26 @@ p {
 /**
  * Top Navigation
  */
-
+.nav{
+    height:20px;
+    background: #EFEFED;
+    padding-left: 100px;
+}
 .menu {
     height: 3em;
     background: #CEE3F8;
-    /*background-color: #677ae4;
-    background-color: #05526A;
-    background-color: #e46855;*/
 }
+
 .menu h1 {
     padding: 7px 0 0 20px;
     color: #000000;
 }
-/*
-.menu h1 em {
-    position: relative;
-    left: -12px;
-}
-*/
+
 .menu a,
-.menu .links {
+
+.links {
     display: inline-block;
+    
 }
 
 .menu a {
@@ -99,28 +98,20 @@ p {
     opacity: 0.85;
 }
 
-.menu a:hover,
-.menu a.active {
+.menu a.hover {
     opacity: 1;
 }
 
-.menu .links {
-    padding: 0 21px;
-}
 
-.menu .links a {
-    position: relative;
+.nav .links a {
     color: #000000;
+    font-size: 12px;
+    opacity: 0.85;
 }
 
-.list-filter input {
-    padding: 11px;
-    font-size: 18px;
-    width: 500px;
-    margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.75);
-    border: solid 1px lightgray;
-    display: block;
+.nav a:hover,
+.nav .active {
+    opacity: 1;
 }
 
 .menu input:focus {
@@ -183,6 +174,7 @@ p {
     background-color: #ffffff;
     padding: 4px;
     position: relative;
+    margin-top: 5px;
 }
 
 /*.listing:hover {
@@ -265,18 +257,18 @@ p {
     background: url(../assets/images/teaching.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 64px;
-    width: 64px;
+    height: 200px;
+    width: 200px;
     position: relative;
-    top: -50px;
 }
 .snoo {
     background: url(../assets/images/snoo.png);
     background-size: contain;
     background-repeat: no-repeat;
+    max-width:100%;
+    max-height:100%;
     height: 64px;
     width: 64px;
-    top: -500px;
 }
 
 

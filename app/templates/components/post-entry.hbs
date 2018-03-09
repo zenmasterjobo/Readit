@@ -4,7 +4,11 @@
     {{post.data.ups}} 
   </div>
   <div>
-        <a target="_blank" href="{{unbound post.data.url}}"><img src="{{post.data.thumbnail}}" alt=""></a>
+    {{#if post.data.thumbnail}}
+        <a target="_blank" href="{{unbound post.data.url}}"><img src="{{post.data.thumbnail}}" alt="../assets/images/snoo.png"></a>
+    {{else}}
+        <a target="_blank" href="{{unbound post.data.url}}"><img src="../assets/images/snoo.png" alt=""></a>
+    {{/if}}
  </div>
  <div class="meta">
    <h3><a target="_blank" href="{{unbound post.data.url}}">{{post.data.title}}</a></h3>
