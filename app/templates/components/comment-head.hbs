@@ -9,7 +9,10 @@
  		</div>
  		<div class="meta">
    			<h3><a target="_blank" href="{{unbound comment.data.url}}">{{comment.data.title}}</a></h3>
-      		<span>Submitted at {{comment.data.created_utc}} moment by <a target="_blank" href="https://www.reddit.com/user/{{comment.data.author}}">{{comment.data.author}}</a> to <a target="_blank" href="https://www.reddit.com/{{unbound comment.data.subreddit_name_prefixed}}">{{comment.data.subreddit_name_prefixed}}</a>
+      		<span>Submitted at {{comment.data.created_utc}} moment by <a target="_blank" href="https://www.reddit.com/user/{{comment.data.author}}">{{comment.data.author}}</a> to 
+            {{#link-to 'subreddit' comment.data.subreddit_name_prefixed}}
+            {{comment.data.subreddit_name_prefixed}}
+            {{/link-to}}
       		</span><br/>
   		</div>
    {{else}}
