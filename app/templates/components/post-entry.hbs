@@ -5,19 +5,19 @@
   </div>
   <div>
     {{#if post.data.thumbnail}}
-        <a target="_blank" href="{{unbound post.data.url}}"><img src="{{post.data.thumbnail}}" alt=""></a>
+      <a target="_blank" href="{{unbound post.data.url}}"><img src="{{post.data.thumbnail}}" alt=""></a>
     {{else}}
-        <a target="_blank" href="{{unbound post.data.url}}"><img src="../assets/images/snoo.png" alt=""></a>
+      <a target="_blank" href="{{unbound post.data.url}}"><img src="../assets/images/snoo.png" alt=""></a>
     {{/if}}
- </div>
- <div class="meta">
-   <h3><a target="_blank" href="{{unbound post.data.url}}">{{post.data.title}}</a></h3>
-      <span>Submitted at {{post.data.created_utc}} moment by <a target="_blank" href="https://www.reddit.com/user/{{post.data.author}}">{{post.data.author}}</a> to 
-        {{#link-to 'subreddit' post.data.subreddit_name_prefixed}}
-        {{post.data.subreddit_name_prefixed}}
-        {{/link-to}}
-      </span><br/>
-    <!--<span class="small"><a target="_blank" href="https://www.reddit.com{{unbound post.data.permalink}}">Comments: {{post.data.num_comments}}</a></span>-->
+  </div>
+  <div class="meta">
+    <h3><a target="_blank" href="{{unbound post.data.url}}">{{post.data.title}}</a></h3>
+    <span>Submitted {{format-utc post.data.created_utc}} hours ago by <a target="_blank"
+    href="https://www.reddit.com/user/{{post.data.author}}">{{post.data.author}}</a> to 
+    {{#link-to 'subreddit' post.data.subreddit_name_prefixed}}
+      {{post.data.subreddit_name_prefixed}}
+    {{/link-to}}
+    </span><br/>
     {{#link-to 'comments' post.data.subreddit_name_prefixed post.data.id}}
       Comments ({{post.data.num_comments}})
     {{/link-to}}

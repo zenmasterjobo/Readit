@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
-/**
+/*
  * Base Elements
  */
 
@@ -37,27 +37,6 @@ p {
     line-height: 1.5;
     margin-bottom: 15px;
 }
-/**
- * Button
- */
-
-.button {
-    padding: 12px 30px 13px;
-    text-decoration: none;
-    color: #fff;
-    background: #2185D0;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    opacity: 0.9;
-}
-
-.button:hover {
-    opacity: 1;
-}
-/**
- * Body Container
- */
 
 .container {
     max-width: 2024px;
@@ -65,7 +44,8 @@ p {
     background: #FFFFFF;
     margin: 0 auto;
 }
-/**
+
+/*
  * Top Navigation
  */
 .nav{
@@ -85,7 +65,6 @@ p {
 }
 
 .menu a,
-
 .links {
     display: inline-block;
     
@@ -156,20 +135,13 @@ p {
 .menu .results li:hover {
     background: #f3f3f3;
 }
-/**
+/*
  * Content Area
  */
 
 .body {
     padding: 15px;
 }
-/**
- * Similar to Jumbotron
- */
-
-/**
- * Individual Listings
- */
 
 .listing {
     background-color: #ffffff;
@@ -178,9 +150,9 @@ p {
     margin-top: 5px;
 }
 
-/*.listing:hover {
+.listing:hover {
     background-color: #f3f3f3;
-}*/
+}
 
 .listing img {
     height: 64px;
@@ -200,12 +172,12 @@ p {
 }
 
 .listing .comment {
-    width: 100%;
+    width: 80%;
     padding-left: 20px;
 }   
 
 .listing .meta {
-   width:100%;
+   width:80%;
    padding-left: 130px;
 }
 
@@ -230,7 +202,7 @@ p {
     font-style: normal;
 }
 
-/**
+/*
  * Utilities
  */
 
@@ -254,14 +226,6 @@ p {
     position: relative;
 }
 
-.tomster {
-    background: url(../assets/images/teaching.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 200px;
-    position: relative;
-}
 .snoo {
     background: url(../assets/images/snoo.png);
     background-size: contain;
