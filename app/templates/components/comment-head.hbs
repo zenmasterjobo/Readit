@@ -4,7 +4,7 @@
       {{comment.data.ups}} 
   	</div>
   	<div>
-      {{#if comment.data.thumbnail}}
+      {{#if (thumbnail-condition comment.data.thumbnail)}}
         <a target="_blank" href="{{unbound comment.data.url}}"><img src="{{comment.data.thumbnail}}" alt=""></a>
       {{else}}
         <a target="_blank" href="{{unbound comment.data.url}}"><img src="../../assets/images/snoo.png" alt=""></a>
