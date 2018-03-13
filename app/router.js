@@ -10,15 +10,13 @@ const Router = Ember.Router.extend({
 	}
 });
  
- 
-
 Router.map(function() {
 	this.route('feed');
 	this.route('comments', {
 	path: 'post/:comments_sub/:comments_id'
 	});
 	this.route('subreddit', {
-      path: 'sub/:subreddit_id'
+	path: 'sub/:subreddit_id'
 	});
 });
 
