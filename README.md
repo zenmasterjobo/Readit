@@ -1,12 +1,12 @@
 # readit
 
-Readit - a Read only pull down of reddit.com
+Readit - a read-only 'clone' of reddit.com
 
-## Issues and Pending Development
+## Known Issues and Pending Development
 Currently runs stable in Chrome, have had  CORS issues in Firefox and Mobile web browsers, still looking into fixing those.
 
-Currently the comments page shows the Root comments that reply to the post. And it can show the children comments that reply to the root comments.
-   - Looking into a working solution that will be able to display all nested child comments.
+Currently the comments page shows the root comments that reply to the post. It also shows the children comments that reply to the root comments.
+   - Looking into a working solution that will be able to display all nested child comments instead of only the direct replies to root comment.
 
 ## Future Development
 Create a route that renders user data when a user is selected from within the app.
