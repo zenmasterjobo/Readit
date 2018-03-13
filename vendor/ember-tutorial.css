@@ -72,6 +72,7 @@ p {
     height:20px;
     background: #EFEFED;
     padding-left: 100px;
+    overflow:hidden;
 }
 .menu {
     height: 3em;
