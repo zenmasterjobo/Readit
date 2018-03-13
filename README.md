@@ -1,10 +1,23 @@
 # readit
 
-Readit - a Read only pull down of reddit's /r/popular  written with Ember.js
+Readit - a Read only pull down of reddit.com
 
-Currently runs stable in Chrome, have run into CORS issues in Firefox, still looking into fixing those.
+## Issues and Pending Development
+Currently runs stable in Chrome, have had  CORS issues in Firefox and Mobile web browsers, still looking into fixing those.
 
-Further Functionality pending.
+Currently the comments page shows the Root comments that reply to the post. And it can show the children comments that reply to the root comments.
+   - Looking into a working solution that will be able to display all nested child comments.
+
+## Future Development
+Create a route that renders user data when a user is selected from within the app.
+
+Set up OAuth and a login page so the user can actually log into their reddit account and see their homepage / subreddit's
+
+Up-vote and Down-vote functionality
+
+Allow a user to post comments
+
+Allow a user to post into a subreddit.
 
 ## Prerequisites
 
