@@ -1,4 +1,4 @@
-# readit
+# Readit
 
 Readit - a read-only 'clone' of reddit.com
 
