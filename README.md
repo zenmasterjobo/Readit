@@ -2,6 +2,8 @@
 
 Readit - a Read only pull down of reddit's /r/popular  written with Ember.js
 
+Currently runs stable in Chrome, have run into CORS issues in Firefox, still looking into fixing those.
+
 Further Functionality pending.
 
 ## Prerequisites
