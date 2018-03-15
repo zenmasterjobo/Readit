@@ -3,6 +3,10 @@
     <h3><a target="_blank" href="https://www.reddit.com/user/{{unbound reply.data.url}}">{{reply.data.author}}</a> {{reply.data.score}}</h3>
     <span>{{reply.data.body}}</span>
     <br/>
-  </div>
+  {{#if reply.data.replies.data.children}}
+    {{#each reply.data.replies.data.children as |response|}}
+    	{{comment-replies reply=response}}
+    {{/each}}
+    {{/if}}
+</div>
 </article>
-

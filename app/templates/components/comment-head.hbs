@@ -24,6 +24,9 @@
 		  <h1><a target="_blank" href="https://www.reddit.com/user/{{unbound comment.data.author}}">{{comment.data.author}}</a> {{comment.data.score}}</h1>
    		<span>{{comment.data.body}}</span>
     	<br/>
+      {{#each comment.data.replies.data.children as |replyGroup|}}
+        {{comment-replies reply=replyGroup}}
+      {{/each}}
     </div>
   {{/if}}
 </article>

@@ -1,9 +1,5 @@
 {{#each model as |commentUnit|}}
   {{#each commentUnit.data.children as |segment|}}
     {{comment-head comment=segment}}
-    {{#each segment.data.replies.data.children as |replyGroup|}}
-  	  {{comment-replies reply=replyGroup}}
-  	{{/each}}
   {{/each}}
 {{/each}}
-
