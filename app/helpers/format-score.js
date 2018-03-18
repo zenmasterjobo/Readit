@@ -7,9 +7,6 @@ export function formatScore(params/*, hash*/) {
 		score = Math.round(score * 10) / 10;
 		score = score + "K";
 	}
-	else{
-		score = score;
-	}
 	return score;
 }
 
