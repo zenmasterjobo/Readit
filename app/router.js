@@ -16,7 +16,7 @@ Router.map(function() {
 	path: 'post/:comments_sub/:comments_id'
 	});
 	this.route('subreddit', {
-	path: 'sub/:subreddit_id'
+	path: 'r/:subreddit_id'
 	});
 });
 
