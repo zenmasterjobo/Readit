@@ -15,7 +15,7 @@
     <span>Submitted {{format-utc post.data.created_utc}} ago by <a target="_blank"
     href="https://www.reddit.com/user/{{post.data.author}}">{{post.data.author}}</a> to 
     {{#link-to 'subreddit' post.data.subreddit}}
-      {{post.data.subreddit}}
+      {{post.data.subreddit_name_prefixed}}
     {{/link-to}}
     </span><br/>
     {{#link-to 'comments' post.data.subreddit post.data.id}}
