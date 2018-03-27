@@ -5,9 +5,9 @@
   </div>
   <div>
     {{#if (thumbnail-condition post.data.thumbnail)}}
-      <a target="_blank" href="{{unbound post.data.url}}"><img src="{{post.data.thumbnail}}" alt=""></a>
+      <a target="_blank" href="{{unbound post.data.url}}"><img src="{{post.data.thumbnail}}" alt="" /></a>
     {{else}}
-      <a target="_blank" href="{{unbound post.data.url}}"><img src="../assets/images/snoo.png" alt=""></a>
+      <a target="_blank" href="{{unbound post.data.url}}"><img src="/assets/images/snoo.png" alt="" /></a>
     {{/if}}
   </div>
   <div class="meta">

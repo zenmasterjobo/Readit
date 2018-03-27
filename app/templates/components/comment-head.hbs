@@ -1,24 +1,7 @@
-<article class="listing">
  	{{#if comment.data.parent_whitelist_status}}
-    <div class="upvotes">
-      {{format-score comment.data.ups}} 
-  	</div>
-  	<div>
-      {{#if (thumbnail-condition comment.data.thumbnail)}}
-        <a target="_blank" href="{{unbound comment.data.url}}"><img src="{{comment.data.thumbnail}}" alt=""></a>
-      {{else}}
-        <a target="_blank" href="{{unbound comment.data.url}}"><img src="../../assets/images/snoo.png" alt=""></a>
-      {{/if}}
- 		</div>
- 		<div class="meta">
-   		<h3><a target="_blank" href="{{unbound comment.data.url}}">{{comment.data.title}}</a></h3>
-        <span>Submitted {{format-utc comment.data.created_utc}} ago by <a target="_blank" href="https://www.reddit.com/user/{{comment.data.author}}">{{comment.data.author}}</a> to 
-        {{#link-to 'subreddit' comment.data.subreddit}}
-          {{comment.data.subreddit_name_prefixed}}
-        {{/link-to}}
-      	</span><br/>
-  	</div>
+    {{post-entry post=comment}}
   {{else}}
+  <article class="listing">
     <div class="comment">
    	  <br/>
 		  <h1><a target="_blank" href="https://www.reddit.com/user/{{unbound comment.data.author}}">{{comment.data.author}}</a> {{comment.data.score}}</h1>
@@ -28,5 +11,5 @@
         {{comment-replies reply=replyGroup}}
       {{/each}}
     </div>
+  </article>
   {{/if}}
-</article>
