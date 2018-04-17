@@ -3,13 +3,11 @@
 Readit - a read-only 'clone' of reddit.com
 
 ## Known Issues and Pending Development
+
 Currently runs stable in Chrome, have had  CORS issues in Firefox and Mobile web browsers, still looking into fixing those.
 
-Currently the comments page shows the root comments that reply to the post. It also shows the children comments that reply to the root comments.
-   - Looking into a working solution that will be able to display all nested child comments instead of only the direct replies to root comment.
-
 ## Future Development
-Create a route that renders user data when a user is selected from within the app.
+Create a route that renders user data when a user is selected from within the app. Current app will link to user's profile on reddit. However, with how with Ember, this should be a relatively easy task to spin up.
 
 Set up OAuth and a login page so the user can actually log into their reddit account and see their homepage / subreddit's
 
